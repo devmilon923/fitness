@@ -45,12 +45,17 @@
 .text-center {
   text-align: center;
 }
+.section-header {
+  width: 55%;
+  margin: 0 auto;
+}
 .section-header h1 {
   font-size: 3.62rem;
   color: white;
 }
 .section-header p {
-  font-size: 3.62rem;
+  margin-top: 10px;
+  font-size: 1.12rem !important;
   color: var(--description-color);
   font-size: 0.87rem;
 }
@@ -70,10 +75,17 @@ body {
   color: white;
   border-radius: 39px;
 }
+main > section {
+  margin-top: 80px;
+}
 
 /* Navbar Sections */
 header {
-    linear-gradient(179deg, rgb(17, 17, 17), rgb(119 119 119 / 7%) 100%);
+  background-image: linear-gradient(
+    179deg,
+    rgb(17, 17, 17),
+    rgb(119 119 119 / 7%) 100%
+  );
 }
 header nav {
   display: flex;
@@ -108,7 +120,6 @@ nav .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 .hero-content {
   display: flex;
@@ -142,12 +153,11 @@ nav .navbar {
   color: white;
   position: absolute;
 
-left: 59%;
-top: 54%;
-
+  left: 59%;
+  top: 54%;
 }
-.workout-video{
-    border-radius: 7px;
+.workout-video {
+  border-radius: 7px;
   width: 200px;
   padding: 20px;
   display: flex;
@@ -165,4 +175,62 @@ top: 54%;
   height: 40px;
   border-radius: 50%;
   background-color: var(--primary-color);
+}
+
+/* Habbits section */
+.habbits-container {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.habbit {
+  padding: 10px;
+  width: 231px;
+}
+.habbit h2 {
+  color: white;
+}
+.habbit p {
+  color: var(--description-color);
+}
+.habbit img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Run an Extra Section */
+.run-extra-section {
+  border-radius: 18px;
+
+  background: rgb(34, 34, 34);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.extra-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.extra-content h1 {
+
+  font-size: 4rem;
+
+  color: white;
+}
+.extra-content p{
+    color: var(--description-color);
+
+}
+.run-image {
+  /* width: 50%; */
+  text-align: end;
+}
+.run-image img {
+  border-radius: 18px;
+
+  width: 60%;
+  text-align: end;
 }
