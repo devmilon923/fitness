@@ -209,20 +209,18 @@ nav .navbar {
   align-items: center;
   justify-content: space-between;
 }
-.extra-content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.extra-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .extra-content h1 {
-
   font-size: 4rem;
 
   color: white;
 }
-.extra-content p{
-    color: var(--description-color);
-
+.extra-content p {
+  color: var(--description-color);
 }
 .run-image {
   /* width: 50%; */
@@ -233,4 +231,38 @@ nav .navbar {
 
   width: 60%;
   text-align: end;
+}
+
+/* Team section */
+.our-team-section {
+  padding: 20px;
+}
+.team-container {
+  background: rgb(34, 34, 34);
+  margin-top: 35px;
+  display: grid;
+  border-radius: 20px;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+.team {
+  position: relative;
+  padding: 20px;
+  color: white;
+  height: 400px;
+}
+.team {
+    background-image: url(./../images/trainer4.png);
+  width: 100%;
+  row-gap: 20px;
+  column-gap: 20px;
+  border-radius: 20px;
+  background-size: cover;
+
+}
+.info {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  z-index: 1;
 }
