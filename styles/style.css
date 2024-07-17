@@ -22,14 +22,24 @@
 /* Default CSS Styles */
 .btn-main {
   padding: 16px 40px 16px 40px;
-  background-color: var(--primary-background);
+  background-color: var(--primary-color) !important;
   color: white;
   font-weight: 600;
   font-size: 1.1rem;
   border-radius: 42px;
+  border: none;
+}
+.btn-main-outline {
+  padding: 16px 40px 16px 40px;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 42px;
+  border: 1px solid gray;
 }
 .container {
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
 }
 .text-center {
@@ -62,15 +72,14 @@ body {
 }
 
 /* Navbar Sections */
-header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+header {
+    linear-gradient(179deg, rgb(17, 17, 17), rgb(119 119 119 / 7%) 100%);
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px;
-
 }
 nav .logo > h1 {
   color: var(--primary-color);
@@ -87,4 +96,73 @@ nav .navbar {
 }
 .navbar > a {
   padding: 6px 25px;
+}
+
+/* Hero Sections */
+.miama {
+  font-family: miama;
+  font-size: 6.87rem;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  /* background-color: aliceblue; */
+}
+.hero-content h1 {
+  font-size: 5.87rem;
+  color: white;
+  line-height: 90px;
+}
+.hero-content p {
+  color: var(--description-color);
+}
+
+.hero-image img {
+  width: 100%;
+  background-size: cover;
+}
+.video-tutorial {
+  border-radius: 7px;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  color: white;
+  position: absolute;
+
+left: 59%;
+top: 54%;
+
+}
+.workout-video{
+    border-radius: 7px;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  color: white;
+  position: absolute;
+  left: 78%;
+  top: 24%;
+}
+.circel {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
 }
