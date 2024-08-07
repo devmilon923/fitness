@@ -240,29 +240,30 @@ nav .navbar {
 .team-container {
   background: rgb(34, 34, 34);
   margin-top: 35px;
-  display: grid;
   border-radius: 20px;
-
+  padding: 30px;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 .team {
   position: relative;
-  padding: 20px;
-  color: white;
-  height: 400px;
 }
-.team {
-    background-image: url(./../images/trainer4.png);
+.team img {
   width: 100%;
-  row-gap: 20px;
-  column-gap: 20px;
-  border-radius: 20px;
-  background-size: cover;
-
+  border-radius: 10px;
 }
+
 .info {
   position: absolute;
+  z-index: 100;
   top: 80%;
   left: 10%;
-  z-index: 1;
+}
+.info h3 {
+  color: white;
+  font-size: 1.6rem;
+}
+.info p {
+  color: var(--description-color);
 }
