@@ -81,11 +81,7 @@ main > section {
 
 /* Navbar Sections */
 header {
-  background-image: linear-gradient(
-    179deg,
-    rgb(17, 17, 17),
-    rgb(119 119 119 / 7%) 100%
-  );
+  background-image: linear-gradient(181deg, rgb(17, 17, 17), rgb(119 119 119 / 0%) 50%)
 }
 header nav {
   display: flex;
