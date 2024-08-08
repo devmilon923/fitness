@@ -59,6 +59,20 @@
   color: var(--description-color);
   font-size: 0.87rem;
 }
+
+.section-header-left {
+  width: 60%;
+}
+.section-header-left h1 {
+  font-size: 3.62rem;
+  color: white;
+}
+.section-header-left p {
+  margin-top: 10px;
+  font-size: 1.12rem !important;
+  color: var(--description-color);
+  font-size: 0.87rem;
+}
 .hamp {
   display: none;
   color: white;
@@ -81,7 +95,11 @@ main > section {
 
 /* Navbar Sections */
 header {
-  background-image: linear-gradient(181deg, rgb(17, 17, 17), rgb(119 119 119 / 0%) 50%)
+  background-image: linear-gradient(
+    181deg,
+    rgb(17, 17, 17),
+    rgb(119 119 119 / 0%) 50%
+  );
 }
 header nav {
   display: flex;
@@ -148,7 +166,6 @@ nav .navbar {
   background: rgba(48, 48, 48, 0.54);
   color: white;
   position: absolute;
-
   left: 59%;
   top: 54%;
 }
@@ -186,6 +203,7 @@ nav .navbar {
 }
 .habbit h2 {
   color: white;
+  margin-top: 5px;
 }
 .habbit p {
   color: var(--description-color);
@@ -219,7 +237,6 @@ nav .navbar {
   color: var(--description-color);
 }
 .run-image {
-  /* width: 50%; */
   text-align: end;
 }
 .run-image img {
@@ -248,6 +265,7 @@ nav .navbar {
 .team img {
   width: 100%;
   border-radius: 10px;
+  opacity: 0.7;
 }
 
 .info {
@@ -262,4 +280,132 @@ nav .navbar {
 }
 .info p {
   color: var(--description-color);
+  font-size: 1.3rem;
+}
+
+/* Trainings and Exercises */
+.training-container1 {
+  display: grid;
+  grid-template-columns: repeat(1, 25% 50% 25%);
+  margin-top: 70px;
+}
+.training-container2 {
+  display: grid;
+  grid-template-columns: repeat(1, 45% 25% 30%);
+}
+.training-step {
+  height: 250px;
+}
+.training-step img {
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 3/2; */
+}
+.training-step {
+  position: relative;
+
+  background-position: center;
+}
+
+.step1 {
+  background-image: url("/images/exercise1.jpg");
+  background-color: rgba(6, 255, 210, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.step1 p {
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  opacity: 0.9;
+  color: white;
+  font-family: Inter;
+  font-weight: 500;
+}
+.step2 {
+  background-image: url("/images/exercise2.png");
+  background-color: rgba(255, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.step2 p {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  opacity: 0.9;
+
+  font-family: Inter;
+  font-weight: 500;
+
+  color: white;
+}
+.step3 {
+  background-image: url("/images/exercise3.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.step3 p {
+  width: 60%;
+  position: absolute;
+  opacity: 0.9;
+  top: 70%;
+  left: 5%;
+  font-family: Inter;
+  font-weight: 500;
+  color: white;
+}
+.step4 {
+  background-image: url("/images/exercise4.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.step4 p {
+  width: 40%;
+  position: absolute;
+  opacity: 0.9;
+  top: 15%;
+  left: 65%;
+  font-family: Inter;
+  font-weight: 500;
+  color: white;
+}
+.step5 {
+  background-image: url("/images/exercise5.jpg");
+  background-color: rgba(66, 255, 0, 0.3);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.step5 p {
+  width: 60%;
+  position: absolute;
+  opacity: 0.9;
+  top: 70%;
+  left: 5%;
+  font-family: Inter;
+  font-weight: 500;
+  color: white;
+}
+.step6 {
+  background-image: url("/images/exercise6.jpg");
+  background-color: rgba(0, 71, 255, 0.3);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.step6 p {
+  width: 60%;
+  position: absolute;
+  opacity: 0.9;
+  top: 70%;
+  left: 5%;
+  font-family: Inter;
+  font-weight: 500;
+  color: white;
 }
