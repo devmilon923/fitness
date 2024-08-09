@@ -336,7 +336,7 @@ nav .navbar {
 }
 
 .step1 {
-  background-image: url("/images/exercise1.jpg");
+  background-image: url("./../images/exercise1.jpg");
   background-color: rgba(6, 255, 210, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
@@ -352,7 +352,7 @@ nav .navbar {
   font-weight: 500;
 }
 .step2 {
-  background-image: url("/images/exercise2.png");
+  background-image: url("./../images/exercise2.png");
   background-color: rgba(255, 0, 0, 0.3);
   background-blend-mode: overlay;
   background-size: cover;
@@ -370,7 +370,7 @@ nav .navbar {
   color: white;
 }
 .step3 {
-  background-image: url("/images/exercise3.png");
+  background-image: url("./../images/exercise3.png");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
@@ -387,7 +387,7 @@ nav .navbar {
   color: white;
 }
 .step4 {
-  background-image: url("/images/exercise4.png");
+  background-image: url("./../images/exercise4.png");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
@@ -404,7 +404,7 @@ nav .navbar {
   color: white;
 }
 .step5 {
-  background-image: url("/images/exercise5.jpg");
+  background-image: url("./../images/exercise5.jpg");
   background-color: rgba(66, 255, 0, 0.3);
   background-blend-mode: overlay;
   background-size: cover;
@@ -421,7 +421,7 @@ nav .navbar {
   color: white;
 }
 .step6 {
-  background-image: url("/images/exercise6.jpg");
+  background-image: url("./../images/exercise6.jpg");
   background-color: rgba(0, 71, 255, 0.3);
   background-blend-mode: overlay;
   background-size: cover;
