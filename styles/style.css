@@ -587,8 +587,8 @@ hr {
   }
   .btn-list > .btn-main,
   .btn-main-outline {
-    padding: 18px 32px;
-    font-size: 1rem;
+    padding: 15px 30px;
+    font-size: 15px;
   }
   .hero-content {
     width: 100%;
@@ -642,8 +642,7 @@ hr {
     width: 100%;
   }
 
-
-  .our-team-section{
+  .our-team-section {
     padding: 0;
   }
   .team-container {
