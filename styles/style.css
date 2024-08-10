@@ -227,12 +227,13 @@ nav .navbar {
   justify-content: space-between;
 }
 .habbit {
-  padding: 10px;
+  padding: 15px 10px;
   width: 231px;
+  /* margin-bottom: ; */
 }
 .habbit h2 {
   color: white;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 .habbit p {
   color: var(--description-color);
@@ -485,14 +486,23 @@ td {
   margin: 15px 0px;
 }
 .form-group input,
-select {
+.manu {
   width: 100%;
   padding: 15px 20px;
   border-radius: 8px;
   outline: none;
   border: none;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgb(44, 44, 44);
   color: var(--description-color);
+  
+}
+select {
+  -webkit-appearance: none;
+  
+}
+option{
+
+
 }
 .flex-input {
   display: grid;
@@ -725,8 +735,8 @@ hr {
     border-radius: 8px;
     outline: none;
     border: none;
-    background: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgb(44, 44, 44);
+
     color: var(--description-color);
-    
   }
 }
