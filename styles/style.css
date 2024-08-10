@@ -504,7 +504,7 @@ footer > .container {
   margin-bottom: 1.5rem;
 }
 .footer-top {
-  color: wheat;
+  color: white;
   display: grid;
   grid-template-columns: repeat(3, 50% 25% 25%);
   justify-content: space-between;
@@ -581,14 +581,14 @@ hr {
   }
   .btn-list {
     display: flex;
-    /* gap: 10px; */
+    gap: 10px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .btn-list > .btn-main,
   .btn-main-outline {
     padding: 15px 30px;
-    font-size: 15px;
+    font-size: 12px;
   }
   .hero-content {
     width: 100%;
@@ -716,5 +716,17 @@ hr {
   .footer-top {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
+  }
+
+  .form-group input,
+  select {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--description-color);
+    
   }
 }
