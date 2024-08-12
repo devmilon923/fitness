@@ -14,6 +14,7 @@
 /* CSS Variable */
 :root {
   --primary-color: rgb(230, 83, 60);
+  --primary-hover: rgba(255, 103, 80, 0.716);
   --primary-background: rgb(0, 0, 0);
   --secendary-background: rgb(34, 34, 34);
   --description-color: rgba(255, 255, 255, 0.5);
@@ -30,6 +31,10 @@
   border: none;
   cursor: pointer;
 }
+.btn-main:hover {
+  background-color: var(--primary-hover) !important;
+  transition: all 0.2s ease-in;
+}
 .btn-main-outline {
   padding: 16px 40px 16px 40px;
   background-color: transparent;
@@ -39,6 +44,10 @@
   border-radius: 42px;
   border: 1px solid gray;
   cursor: pointer;
+}
+.btn-main-outline:hover {
+  background-color: rgba(128, 128, 128, 0.724) !important;
+  transition: all 0.2s ease-in;
 }
 .container {
   width: 70%;
@@ -194,7 +203,7 @@ nav .navbar {
   background: rgba(48, 48, 48, 0.54);
   color: white;
   position: absolute;
-  left: -42%;
+  left: -26%;
   top: 74%;
 }
 .workout-video {
@@ -279,35 +288,71 @@ nav .navbar {
 .our-team-section {
   padding: 20px;
 }
+
 .team-container {
-  background: rgb(34, 34, 34);
-  margin-top: 35px;
-  border-radius: 20px;
-  padding: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-}
-.team {
-  position: relative;
-}
-.team img {
-  width: 100%;
-  border-radius: 10px;
-  opacity: 0.7;
+  padding: 30px;
+  background: rgb(34, 34, 34);
+  border-radius: 20px;
+  margin-top: 30px;
 }
 
-.info {
+.teamBox {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 19px -16px 101px 0px #5148489c inset;
+  border-radius: 20px;
+}
+.team1 {
+  background-image: url(../images/trainer.jpg);
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.team2 {
+  background-image: url(../images/ctainer2.jpg);
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.team3 {
+  background-image: url(../images/ctainer3.jpg);
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.team4 {
+  background-image: url(../images/ctainer4.jpg);
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.team5 {
+  background-image: url(../images/ctainer5.jpg);
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.team6 {
+  background-image: url(../images/ctainer6.jpg);
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.teamInfo {
   position: absolute;
   z-index: 100;
-  top: 80%;
+  top: 75%;
   left: 10%;
 }
-.info h3 {
+.teamInfo h1 {
   color: white;
   font-size: 1.6rem;
 }
-.info p {
+.teamInfo p {
   color: var(--description-color);
   font-size: 1.3rem;
 }
@@ -494,16 +539,11 @@ td {
   border: none;
   background-color: rgb(44, 44, 44);
   color: var(--description-color);
-  
 }
 select {
   -webkit-appearance: none;
-  
 }
-option{
 
-
-}
 .flex-input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -565,6 +605,40 @@ hr {
 .display-none {
   display: none;
 }
+.review-container {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0px;
+}
+.review {
+  color: white;
+  background-image: linear-gradient(rgb(9, 34, 31),rgb(10, 13, 13));
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+.user {
+  display: flex;
+  gap: 10px;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.review img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 10%;
+  /* margin: 10px 0px; */
+}
+
+.ratings {
+  color: gold;
+}
 
 @media screen and (max-width: 576px) {
   /* Header section */
@@ -578,13 +652,23 @@ hr {
     flex-direction: column;
     gap: 10px;
   }
+
   .workout-video {
-    left: 44%;
-    top: 37%;
+    width: 186px;
+    padding: 9px;
+
+    left: 46%;
+    top: 38%;
   }
+
   .video-tutorial {
-    left: -2%;
-    top: 74%;
+    border-radius: 7px;
+    z-index: 1;
+    width: 186px;
+    padding: 9px;
+
+    left: 3%;
+    top: 79%;
   }
   .hero-content > div > button {
     margin-bottom: 10px;
@@ -593,7 +677,7 @@ hr {
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .btn-list > .btn-main,
   .btn-main-outline {
@@ -608,7 +692,7 @@ hr {
     line-height: 60px;
   }
   .miama {
-    font-size: 4.3rem;
+    font-size: 4.5rem;
     font-weight: 100;
   }
   nav .navbar {
@@ -687,6 +771,229 @@ hr {
   .step6 {
     display: none;
   }
+  .step4 {
+    background-position: 41%;
+  }
+  .step2 {
+    background-position: 67%;
+  }
+  .circel {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
+  .training-container2 {
+    grid-template-columns: repeat(1, 50% 50%);
+  }
+  .training-container2 p {
+    width: 100%;
+  }
+  .step4 p {
+    left: 36%;
+  }
+.review-container{
+  flex-direction: column;
+}
+  .section-header-left-middle {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .section-header-left-middle h1 {
+    font-size: 2.1rem;
+  }
+  .section-header-left-middle p {
+    width: 100%;
+  }
+
+  .bmi-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .bmi-section table {
+    margin-top: 20px;
+  }
+
+  .mini-header h1 {
+    font-size: 1.4rem;
+  }
+  .bmi-section > .container {
+    margin-top: 15px;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+
+  .form-group input,
+  select {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(44, 44, 44);
+
+    color: var(--description-color);
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 850px) {
+  /* Header section */
+  .container {
+    width: 90%;
+  }
+  .hero-section {
+    margin-top: 40px;
+  }
+  .hero-container {
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+  .item1 {
+    flex: 1 1;
+  }
+  .workout-video {
+    width: 186px;
+    padding: 9px;
+    left: 40%;
+    top: 38%;
+  }
+
+  .video-tutorial {
+    width: 186px;
+    padding: 9px;
+
+    left: 3%;
+    top: 79%;
+  }
+  .hero-content > div > button {
+    margin-bottom: 10px;
+  }
+  .btn-list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .btn-list > .btn-main,
+  .btn-main-outline {
+    padding: 15px 30px;
+    font-size: 12px;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 3.8rem;
+    line-height: 60px;
+  }
+  .miama {
+    font-size: 4.5rem;
+    font-weight: 100;
+  }
+  nav .navbar {
+    display: none;
+  }
+  .hamp {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  /* Habits section */
+  .section-header {
+    width: 100%;
+  }
+  .section-header h1 {
+    font-size: 2rem;
+  }
+  .section-header > p {
+    font-size: 1rem !important;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .habbits-container {
+    flex-wrap: wrap;
+    gap: 10px; /* Optional: adds spacing between items */
+  }
+  .habbit {
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+  }
+  .habbit img {
+    width: 50%;
+  }
+  .text-center {
+    width: 75%;
+    margin: 0 auto;
+  }
+  /* run-extra-section */
+  .run-extra-section {
+    /* flex-direction: column; */
+    gap: 30px;
+    padding: 30px;
+  }
+  .run-image {
+    text-align: start;
+  }
+  .run-image img {
+    width: 100%;
+  }
+  .extra-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .extra-content button {
+    width: 100%;
+  }
+
+  .our-team-section {
+    padding: 0;
+  }
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+  .info {
+    top: 74%;
+    left: 11%;
+  }
+  .info h3 {
+    font-size: 1.4rem;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+
+  .section-header-left {
+    width: 100%;
+  }
+  .section-header-left h1 {
+    font-size: 1.9rem;
+    width: 80%;
+  }
+
+  .training-container1 {
+    grid-template-columns: repeat(1, 50% 50%);
+  }
+  .step3 {
+    display: none;
+  }
+  .step6 {
+    display: none;
+  }
+  .step4 {
+    background-position: 41%;
+  }
+  .step2 {
+    background-position: 67%;
+  }
+  .circel {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
   .training-container2 {
     grid-template-columns: repeat(1, 50% 50%);
   }
@@ -709,13 +1016,16 @@ hr {
   }
 
   .bmi-container {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 30px;
   }
   .bmi-section table {
     margin-top: 20px;
   }
-
+  .review-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
   .mini-header h1 {
     font-size: 1.4rem;
   }
