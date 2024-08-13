@@ -222,10 +222,19 @@ nav .navbar {
   top: 24%;
 }
 .circel {
+  /* padding: 10px; */
   width: 40px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   border-radius: 50%;
   background-color: var(--primary-color);
+}
+.circel > i {
+  font-size: 1.5rem;
+  visibility: hidden;
 }
 
 /* Habbits section */
@@ -350,11 +359,11 @@ nav .navbar {
 }
 .teamInfo h1 {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 .teamInfo p {
   color: var(--description-color);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* Trainings and Exercises */
@@ -543,6 +552,7 @@ td {
 }
 select {
   -webkit-appearance: none;
+  /*  i use this becouse in select tag any style not apply in iPhone for that resone i google it and solve this using this css in select tag */
 }
 
 .flex-input {
@@ -613,7 +623,7 @@ hr {
 }
 .review {
   color: white;
-  background-image: linear-gradient(rgb(9, 34, 31),rgb(10, 13, 13));
+  background-image: linear-gradient(rgb(9, 34, 31), rgb(10, 13, 13));
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
@@ -649,13 +659,14 @@ hr {
   .hero-section {
     margin-top: 40px;
   }
+
   .hero-container {
     flex-direction: column;
     gap: 10px;
   }
 
   .workout-video {
-    width: 186px;
+    width: 150px;
     padding: 9px;
 
     left: 46%;
@@ -665,11 +676,20 @@ hr {
   .video-tutorial {
     border-radius: 7px;
     z-index: 1;
-    width: 186px;
+    width: 155px;
     padding: 9px;
-
-    left: 3%;
-    top: 79%;
+    left: 4%;
+    top: 77%;
+  }
+  .text h1 {
+    font-size: 19px;
+  }
+  .text p {
+    font-size: 11px;
+  }
+  .circel > i {
+    visibility: visible;
+    margin-top: 3px;
   }
   .hero-content > div > button {
     margin-bottom: 10px;
@@ -689,7 +709,7 @@ hr {
     width: 100%;
   }
   .hero-content h1 {
-    font-size: 3.8rem;
+    font-size: 3.7rem;
     line-height: 60px;
   }
   .miama {
@@ -730,7 +750,7 @@ hr {
     width: 100%;
   }
   .extra-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .extra-content button {
@@ -779,9 +799,6 @@ hr {
     background-position: 67%;
   }
   .circel {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     background-color: var(--primary-color);
   }
   .training-container2 {
@@ -793,9 +810,9 @@ hr {
   .step4 p {
     left: 36%;
   }
-.review-container{
-  flex-direction: column;
-}
+  .review-container {
+    flex-direction: column;
+  }
   .section-header-left-middle {
     width: 100%;
     margin: 20px 0px;
@@ -826,7 +843,9 @@ hr {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
   }
-
+  .text-logo p {
+    width: 100%;
+  }
   .form-group input,
   select {
     width: 100%;
@@ -849,25 +868,32 @@ hr {
     margin-top: 40px;
   }
   .hero-container {
-    /* flex-direction: column; */
     gap: 10px;
   }
   .item1 {
     flex: 1 1;
   }
   .workout-video {
-    width: 186px;
+    width: 150px;
     padding: 9px;
-    left: 40%;
+
+    left: 46%;
     top: 38%;
   }
 
   .video-tutorial {
-    width: 186px;
+    border-radius: 7px;
+    z-index: 1;
+    width: 155px;
     padding: 9px;
-
-    left: 3%;
-    top: 79%;
+    left: 4%;
+    top: 77%;
+  }
+  .text h1 {
+    font-size: 19px;
+  }
+  .text p {
+    font-size: 11px;
   }
   .hero-content > div > button {
     margin-bottom: 10px;
@@ -886,7 +912,7 @@ hr {
     width: 100%;
   }
   .hero-content h1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     line-height: 60px;
   }
   .miama {
@@ -915,6 +941,7 @@ hr {
   }
   .habbits-container {
     flex-wrap: wrap;
+
     gap: 10px; /* Optional: adds spacing between items */
   }
   .habbit {
@@ -1023,9 +1050,9 @@ hr {
   .bmi-section table {
     margin-top: 20px;
   }
-  .review-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  .review-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .mini-header h1 {
     font-size: 1.4rem;
